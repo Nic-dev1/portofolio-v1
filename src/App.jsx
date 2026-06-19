@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+const BASE = import.meta.env.BASE_URL;
 
 const portfolioData = {
   name: "NICO ALFONSO PURBA",
@@ -10,7 +11,7 @@ const portfolioData = {
   github: "Nic-v1",
   hp: "+6285767201381",
 
-  photo: "/2.jpg",
+  photo: `${BASE}2.jpg`,
 
   education: [
     {
@@ -73,7 +74,7 @@ const portfolioData = {
       title: "PIAGAM PENGHARGAAN",
       issuer: "SMART STUDENT",
       year: "2024",
-      image: "/OSN.jpg",
+      image: `${BASE}OSN.jpg`,
       color: "from-cyan-500 to-blue-400",
       badge: "📄",
     },
@@ -82,7 +83,7 @@ const portfolioData = {
       title: "SERTIFIKAT KOMPETENSI",
       issuer: "SMK NEGERI 1 PARBULUAN",
       year: "2025",
-      image: "/kompetensi.jpeg",
+      image: `${BASE}kompetensi.jpeg`,
       color: "from-purple-500 to-indigo-400",
       badge: "📄",
     },
@@ -91,7 +92,7 @@ const portfolioData = {
       title: "MICROSOFT OFFICE SPECIALIST",
       issuer: "MICROSOFT",
       year: "2026",
-      image: "/MOS.jpg",
+      image: `${BASE}MOS.jpg`,
       color: "from-green-500 to-emerald-400",
       badge: "📄",
     },
@@ -100,7 +101,7 @@ const portfolioData = {
       title: "SDGs 101",
       issuer: "SDG ACADEMY INDONESIA",
       year: "2026",
-      image: "/SDGs 101.jpg",
+      image: `${BASE}SDGs 101.jpg`,
       color: "from-orange-500 to-amber-400",
       badge: "📄",
     },
@@ -109,7 +110,7 @@ const portfolioData = {
       title: "POLUSI",
       issuer: "SDG ACADEMY INDONESIA",
       year: "2026",
-      image: "/polusi.jpg",
+      image: `${BASE}polusi.jpg`,
       color: "from-rose-500 to-pink-400",
       badge: "📄",
     },
@@ -359,10 +360,10 @@ export default function Portfolio() {
               <p className="text-gray-300 leading-relaxed mb-8">{d.about}</p>
               <div className="space-y-3">
                 {[
-                  { icon:"/lokasi.png", label:"Lokasi",  val:d.location },
-                  { icon:"/email.png", label:"Email",   val:d.email,  href:`akun6665x@gmail.com${d.email}` },
-                  { icon:"/wa.png", label:"HP / WA", val:d.hp },
-                  { icon:"/github.png", label:"GitHub",  val:d.github, href:`https://github.com/Nic-dev1` },
+                  { icon:`${BASE}lokasi.png`, label:"Lokasi",  val:d.location },
+                  { icon:`${BASE}email.png`, label:"Email",   val:d.email,  href:`akun6665x@gmail.com${d.email}` },
+                  { icon:`${BASE}wa.png`, label:"HP / WA", val:d.hp },
+                  { icon:`${BASE}github.png`, label:"GitHub",  val:d.github, href:`https://github.com/Nic-dev1` },
                 ].map(({ icon, label, val, href }) => (
                   <div key={label} className="flex items-center gap-3 p-3 rounded-xl transition-colors"
                     style={{ background:"#111827", border:"1px solid #1f2937" }}
@@ -526,10 +527,10 @@ export default function Portfolio() {
           <div className="rounded-2xl p-8 space-y-3 text-left"
             style={{ background:"#111827", border:"1px solid #1f2937" }}>
             {[
-              { icon:"/email.png", label:"Email",   val:d.email,  href:`akun6665x@gmail.com${d.email}` },
-              { icon:"/wa.png", label:"HP / WA", val:d.hp },
-              { icon:"/github.png", label:"GitHub",  val:d.github, href:`https://github.com/Nic-dev1` },
-              { icon:"/lokasi.png", label:"Lokasi",  val:d.location },
+              { icon:`${BASE}email.png`, label:"Email",   val:d.email,  href:`akun6665x@gmail.com${d.email}` },
+              { icon:`${BASE}wa.png`, label:"HP / WA", val:d.hp },
+              { icon:`${BASE}github.png`, label:"GitHub",  val:d.github, href:`https://github.com/Nic-dev1` },
+              { icon:`${BASE}lokasi.png`, label:"Lokasi",  val:d.location },
             ].map(({ icon, label, val, href }) => (
               <div key={label}
                 className="flex items-center gap-4 p-4 rounded-xl transition-colors cursor-default"
