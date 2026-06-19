@@ -10,7 +10,7 @@ const portfolioData = {
   github: "Nic-v1",
   hp: "+6285767201381",
 
-  photo: "/public/2.jpg",
+  photo: "/2.jpg",
 
   education: [
     {
@@ -73,7 +73,7 @@ const portfolioData = {
       title: "PIAGAM PENGHARGAAN",
       issuer: "SMART STUDENT",
       year: "2024",
-      image: "/public/OSN.jpg",
+      image: "/OSN.jpg",
       color: "from-cyan-500 to-blue-400",
       badge: "📄",
     },
@@ -82,7 +82,7 @@ const portfolioData = {
       title: "SERTIFIKAT KOMPETENSI",
       issuer: "SMK NEGERI 1 PARBULUAN",
       year: "2025",
-      image: "/public/kompetensi.jpeg",
+      image: "/kompetensi.jpeg",
       color: "from-purple-500 to-indigo-400",
       badge: "📄",
     },
@@ -91,7 +91,7 @@ const portfolioData = {
       title: "MICROSOFT OFFICE SPECIALIST",
       issuer: "MICROSOFT",
       year: "2026",
-      image: "/public/MOS.jpg",
+      image: "/MOS.jpg",
       color: "from-green-500 to-emerald-400",
       badge: "📄",
     },
@@ -100,7 +100,7 @@ const portfolioData = {
       title: "SDGs 101",
       issuer: "SDG ACADEMY INDONESIA",
       year: "2026",
-      image: "/public/SDGs 101.jpg",
+      image: "/SDGs 101.jpg",
       color: "from-orange-500 to-amber-400",
       badge: "📄",
     },
@@ -109,7 +109,7 @@ const portfolioData = {
       title: "POLUSI",
       issuer: "SDG ACADEMY INDONESIA",
       year: "2026",
-      image: "/public/polusi.jpg",
+      image: "/polusi.jpg",
       color: "from-rose-500 to-pink-400",
       badge: "📄",
     },
