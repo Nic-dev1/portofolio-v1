@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: "/portofolio-v1",
+  base: "/portofolio-v1/",
 })
